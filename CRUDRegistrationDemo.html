@@ -1,0 +1,131 @@
+<!-- http://mrbool.com/creating-a-crud-form-with-html5-local-storage-and-json/26719 
+http://www.codemag.com/article/1511031
+https://www.codeofaninja.com/2012/11/javascript-array-crud-example.html
+-->
+<html> 
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+		<script type="text/javascript" src="http://code.jQuery.com/jQuery-1.7.2.min.js"></script> 
+		<script type="text/javascript" src="functions.js"></script> 
+</head> 
+<body> 
+<h1> Registration Form:</h1>
+<form id="frmRes" name='registration' onSubmit="return formValidation();"> 
+<ul> 
+		<li> 
+			<label for="txtID">ID:</label> 
+			<input type="text" id="txtid"/> 
+		</li> <br> 
+		<li> 
+			<label for="txtName">First Name:</label> 
+			<input type="text" id="txtName"/> 
+		</li> <br>
+		<li> 
+			<label for="txtPhone">Last Name:</label> 
+			<input type="text" id="txtLName"/> 
+		</li> <br>
+		<li> 
+			<label for="txtPhone">Phone No:</label> 
+			<input type="text" id="txtPhone" size="9"/> 
+		</li> <br>
+		<li> 
+			<label id="gender">Gender:</label>  
+			<input type="radio" name="radiobutton" value="Male" id="rdMale" /><span>Male</span>
+			<input type="radio" name="radiobutton" value="Female" id="rdFemale" /><span>Female</span>
+		</li> <br>
+		<li>
+			<label id="dob">DOB:</label>
+			<select name="birthday_day" >
+				<option value="" selected>Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="27">28</option>
+				<option value="27">29</option>
+				<option value="27">30</option>
+				<option value="27">31</option>
+			</select>
+			<select name="birthday_month" >
+				<option value="" selected >Month</option>
+				<option value="1">Jan</option>
+				<option value="2">Feb</option>
+				<option value="3">Mar</option>
+				<option value="4">Apr</option>
+				<option value="5">May</option>
+				<option value="6">Jan</option>
+				<option value="7">Jul</option>
+				<option value="8">Aug</option>
+				<option value="9">Sep</option>
+				<option value="10">Oct</option>
+				<option value="11">Nov</option>
+				<option value="12">Dec</option>
+			</select>
+			<select name="birthday_year">
+				<option value="" selected>Year</option>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+				<option value="2011">2011</option>
+				<option value="2010">2010</option>
+				<option value="2009">2009</option>
+			</select>
+		</li><br>
+		<li> 
+			<label for="txtEmail">Email:</label> 
+			<input type="text" id="txtEmail" size="50" /> 
+		</li> <br>
+		<li>
+			<label for="passid">Password:</label>
+			<input type="password" name="passid" size="12" id="passid" />
+		</li>  <br>
+		<li>
+			<label for="country">Country:</label>
+				<select name="country">  
+				<option selected="" value="Default">(Please select a country)</option>  
+				<option value="AF">Australia</option>  
+				<option value="AL">Canada</option>  
+				<option value="DZ">India</option>  
+				<option value="AS">Russia</option>  
+				<option value="AD">USA</option>  
+				</select>	
+		</li>  <br>
+		<li>
+			<label>Language:</label>
+				<input type="checkbox" name="en" checked="true" /><span>English</span>
+				<input type="checkbox" name="hin" /><span>Hindi</span>
+				<input type="checkbox" name="Guj" /><span>Gujrati</span>
+		</li>  <br>
+		<li><label for="desc">About:</label><textarea name="desc" id="desc"></textarea></li> <br>
+		<input type="submit" value="Save" id="btnSave"/>
+		<input type="button" value="Cancel" id="btnCancel"/>
+	</ul> 
+</form> 
+	<table id="tblResList"> </table> 
+</body> 
+</html> 
+
+
+
